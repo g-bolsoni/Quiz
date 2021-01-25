@@ -1,0 +1,15 @@
+{
+    "title":"Meu Quiz",
+    "description":"Descrição do quiz",
+    "theme": {
+        "colors":{
+            "primary":"#4caf50",
+            "secondary":"#ff9800",
+            "mainBg":"#1c1814",
+            "contrastText": "#FFFFFF",
+            "wrong":"#ff5722",
+            "sucess": "#4caf50"
+        },
+        "borderRadius":"4px"
+    }
+}
