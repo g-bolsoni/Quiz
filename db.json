@@ -1,5 +1,5 @@
 {
-    "bg": "",
+    "bg": "https://freefrontend.com/assets/img/css-background-patterns/css-lattice-pattern.png",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
@@ -40,4 +40,5 @@
       },
       "borderRadius": "4px"
     }
-  }
+
+}

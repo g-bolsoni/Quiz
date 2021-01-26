@@ -18,11 +18,10 @@ export const QuizContainer = styled.div`
 `;
 
 
-
-
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      {/*Mostrar a parte esquerda*/}
       <QuizContainer>
         <Widget>
           <Widget.Header>
