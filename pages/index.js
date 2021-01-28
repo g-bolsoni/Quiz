@@ -8,6 +8,9 @@ import Widget from '../src/Components/Widget';
 import Footer from '../src/Components/Footer';
 import QuizBackground from '../src/Components/QuizBackground';
 import GitHubCorner from '../src/Components/GitHubCorner';
+import Input from '../src/Components/Input';
+import Button from '../src/Components/Button';
+
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -22,7 +25,7 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   const router = useRouter();
-  const [name ,setName] = React.useState('');
+  const [name, setName] = React.useState('');
   console.log(name + setName);
 
   return (
@@ -43,20 +46,15 @@ export default function Home() {
               // console.log(('Fazendo uma submissão no form'));
             }}
             >
-              <input
-                type="text"
+              <Input
+                name="nomeDoUsuarip"
+                onChange={(event) => setName(event.target.value)}
                 placeholder="Seu nome"
-                autoComplete="true"
-                onChange={(event) => {
-                  // console.log(event.target.value);
-                  // State
-                  setName(event.target.value);
-                }}
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar  ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
